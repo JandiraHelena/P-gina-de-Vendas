@@ -19,9 +19,9 @@ Emojis para criar conexão emocional
 Gatilhos Mentais:
 
 ✅ Prova Social - Depoimentos reais em formato WhatsApp
-⏰ Escassez - Oferta limitada até 24/10
-💰 Urgência - Preço promocional de R$ 129 por R$ 29,90
-🎁 Reciprocidade - 9 bônus exclusivos gratuitos
+⏰ Escassez - Oferta limitada 
+💰 Urgência - Preço promocional
+🎁 Reciprocidade - bônus exclusivos gratuitos
 🏆 Autoridade - 300+ alunas de sucesso, nota 4.9/5
 🛡️ Garantia - Recupere investimento no 1º dia
 
@@ -33,7 +33,7 @@ Quiz progressivo que aumenta o comprometimento
 Revelação gradual de provas sociais
 Timeline de resultados esperados
 Seção de bônus com alto valor percebido
-Precificação com ancoragem (R$ 129 → R$ 29,90)
+Precificação com ancoragem 
 FAQ que elimina objeções
 CTA repetido em momentos estratégicos
 
