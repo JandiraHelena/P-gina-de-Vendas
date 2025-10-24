@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra Como Ganhar R$ 3.000+/mês com Brigadeiros Sem Fogão</title>
+    <meta name="description" content="Aprenda a ganhar dinheiro vendendo brigadeiros sem usar fogão. Guia completo para começar seu negócio de brigadeiros hoje mesmo!">
+    <link rel="stylesheet" href="styles.css">
+    <head>
+        <body>
+    <!-- Hero Section -->
+    <div class="hero" id="hero">
+        <div class="container">
+            <div class="hero-icon">🍫</div>
+            <h1>Descubra Como Ganhar R$ 3.000+ Por Mês Fazendo Brigadeiros SEM FOGÃO!</h1>
+            <p class="subheadline">✨ Mesmo começando do ZERO, sem equipamentos caros e em apenas 7 dias!</p>
+            <button class="btn-continue" onclick="startQuiz()">QUERO DESCOBRIR MEU POTENCIAL →</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Progress Bar -->
+        <div class="progress-container hidden" id="progressContainer">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+            <div class="progress-text" id="progressText">Pergunta 1 de 5</div>
+        </div>
+
+        <!-- Quiz Sections -->
+        <div class="section" id="quiz">
+            <!-- Question 1 -->
+            <div class="quiz-question" id="q1">
+                <img src="Imagens/imagem de doces 1.jpg" alt="Desafio" class="question-image">
+                <h2>🤔 Qual é o seu maior desafio AGORA?</h2>
+                <div class="quiz-option" onclick="selectOption(this, 1)">
+                    <span>😰 Preciso de renda extra URGENTE</span>
+                    <span class="emoji">😰</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 1)">
+                    <span>💼 Quero ter meu próprio negócio</span>
+                    <span class="emoji">💼</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 1)">
+                    <span>🏠 Trabalhar de casa para cuidar da família</span>
+                    <span class="emoji">🏠</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 1)">
+                    <span>💸 As contas estão apertadas</span>
+                    <span class="emoji">💸</span>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-question hidden" id="q2">
+                <img src="Imagens/imagem de doces 2.png" alt="Experiência" class="question-image">
+                <h2>🍰 Você já tentou vender doces antes?</h2>
+                <div class="quiz-option" onclick="selectOption(this, 2)">
+                    <span>❌ Não, nunca tentei mas sempre quis</span>
+                    <span class="emoji">❌</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 2)">
+                    <span>😔 Sim, mas era muito complicado</span>
+                    <span class="emoji">😔</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 2)">
+                    <span>🤷‍♀️ Não sabia como divulgar</span>
+                    <span class="emoji">🤷‍♀️</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 2)">
+                    <span>💭 Tenho medo de falhar</span>
+                    <span class="emoji">💭</span>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-question hidden" id="q3">
+                <img src="Imagens/imagem de doces 3.jpg" alt="Tempo" class="question-image">
+                <h2>⏰ Quanto tempo você tem disponível por dia?</h2>
+                <div class="quiz-option" onclick="selectOption(this, 3)">
+                    <span>⚡ Menos de 2 horas</span>
+                    <span class="emoji">⚡</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 3)">
+                    <span>🕐 Entre 2 e 4 horas</span>
+                    <span class="emoji">🕐</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 3)">
+                    <span>🕓 Mais de 4 horas</span>
+                    <span class="emoji">🕓</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 3)">
+                    <span>🌙 Só à noite ou fins de semana</span>
+                    <span class="emoji">🌙</span>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-question hidden" id="q4">
+                <img src="Imagens/imagens de doces 4.jpg" alt="Meta Financeira" class="question-image">
+                <h2>💰 Quanto você gostaria de ganhar por mês?</h2>
+                <p>Seja sincera, é muito importante...</p>
+                <div class="quiz-option" onclick="selectOption(this, 4)">
+                    <span>💵 R$ 500 a R$ 1.000</span>
+                    <span class="emoji">💵</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 4)">
+                    <span>💸 R$ 1.000 a R$ 3.000</span>
+                    <span class="emoji">💸</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 4)">
+                    <span>💰 R$ 3.000 a R$ 5.000</span>
+                    <span class="emoji">💰</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 4)">
+                    <span>🤑 Mais de R$ 5.000</span>
+                    <span class="emoji">🤑</span>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="quiz-question hidden" id="q5">
+                <img src="Imagens/Image_fx (71).jpg" alt="Compromisso" class="question-image">
+                <h2>👍 Você está pronta para começar?</h2>
+                <p>Essa é a pergunta mais importante...</p>
+                <div class="quiz-option" onclick="selectOption(this, 5)">
+                    <span>🔥 Sim! Quero começar AGORA</span>
+                    <span class="emoji">🔥</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 5)">
+                    <span>✅ Sim, mas com calma</span>
+                    <span class="emoji">✅</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 5)">
+                    <span>🤔 Ainda estou pensando</span>
+                    <span class="emoji">🤔</span>
+                </div>
+                <div class="quiz-option" onclick="selectOption(this, 5)">
+                    <span>😊 Preciso saber mais detalhes</span>
+                    <span class="emoji">😊</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Section -->
+        <div class="section" id="loading">
+            <div class="loading-container">
+                <div class="loading-spinner"></div>
+                <div class="loading-text">🔄 Analisando suas respostas...</div>
+                <p style="color: #666; margin-top: 20px; font-size: 16px;">✓ Identificando seu perfil empreendedor...</p>
+                <p style="color: #666; margin-top: 10px; font-size: 16px;">✓ Calculando seu potencial de lucro...</p>
+                <p style="color: #666; margin-top: 10px; font-size: 16px;">✓ Preparando seu plano personalizado...</p>
+            </div>
+        </div>
+
+        <!-- Result Section -->
+        <div class="section" id="result">
+            <div class="result-box">
+                <h2>🎉 PARABÉNS! Você tem o PERFIL IDEAL!</h2>
+                <p style="font-size: 18px; margin: 20px 0; color: #333;">Com base nas suas respostas, você pode lucrar até:</p>
+                <div class="result-number">R$ 3.000+</div>
+                <p style="font-size: 16px; color: #666;">por mês fazendo brigadeiros sem fogão!</p>
+            </div>
+            <button class="btn-continue" onclick="showProof()">CONTINUAR PARA VER OS RESULTADOS →</button>
+        </div>
+
+        <!-- Proof Section -->
+        <div class="section" id="proof">
+            <h2 style="text-align: center; color: #764ba2; margin-bottom: 30px;">💬 Veja o que quem já começou está dizendo:</h2>
+            
+            <div class="whatsapp-proof">
+                <div class="whatsapp-header">Maria Silva - São Paulo</div>
+                <div class="whatsapp-message">"Gente, não acredito! Fiz minha primeira fornada ontem e já vendi TUDO para as vizinhas! 🎉 Lucrei R$ 85 em 2 horas! Obrigada por esse método incrível!"</div>
+                <div class="whatsapp-time">09:43 ✓✓</div>
+            </div>
+
+            <div class="whatsapp-proof">
+                <div class="whatsapp-header">Ana Paula - Rio de Janeiro</div>
+                <div class="whatsapp-message">"Comecei há 2 semanas e já fiz R$ 1.200! O melhor é que não preciso de fogão, então faço tudo rápido depois do trabalho. Minha meta agora é chegar nos R$ 3.000! 💪"</div>
+                <div class="whatsapp-time">14:22 ✓✓</div>
+            </div>
+
+            <div class="whatsapp-proof">
+                <div class="whatsapp-header">Carla Santos - Belo Horizonte</div>
+                <div class="whatsapp-message">"Pessoal, era EXATAMENTE isso que eu precisava! Trabalho fora o dia todo e só tenho as noites livres. Consigo fazer brigadeiros em 30 minutos e vender no dia seguinte. Já paguei a conta de luz desse mês! 🙏"</div>
+                <div class="whatsapp-time">18:55 ✓✓</div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">5.247+</div>
+                    <div class="stat-label">Pessoas já começaram</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">R$ 3.200</div>
+                    <div class="stat-label">Lucro médio mensal</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7 dias</div>
+                    <div class="stat-label">Para o primeiro lucro</div>
+                </div>
+            </div>
+
+            <button class="btn-continue" onclick="showCountdown()">CONTINUAR PARA VER A OFERTA →</button>
+        </div>
+
+        <!-- Countdown Section -->
+        <div class="section" id="countdownSection">
+            <div class="countdown">
+                <div style="font-size: 20px; font-weight: 600;">⏰ OFERTA ESPECIAL TERMINA EM:</div>
+                <div class="countdown-timer" id="timer">14:59</div>
+                <div style="font-size: 16px;">Aproveite o desconto de 67% antes que acabe!</div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%); padding: 30px; border-radius: 15px; margin: 30px 0; border: 3px dashed #ffc107;">
+                <h3 style="color: #856404; text-align: center; margin-bottom: 20px; font-size: 24px;">🔥 ÚLTIMAS 7 VAGAS COM 67% DE DESCONTO 🔥</h3>
+                <p style="color: #856404; text-align: center; font-size: 16px;">Essa oferta é válida apenas até as 23:59 de hoje!</p>
+            </div>
+
+            <button class="btn-continue" onclick="showBonus()">CONTINUAR PARA VER OS BÔNUS →</button>
+        </div>
+
+        <!-- Bonus Section -->
+        <div class="section" id="bonus">
+            <div class="bonus-section">
+                <h3>🎁 BÔNUS EXCLUSIVOS QUE VOCÊ VAI RECEBER:</h3>
+                
+                <div class="bonus-item">
+                    <div class="bonus-check">✅</div>
+                    <div class="bonus-text">
+                        <h4>BÔNUS 01 - Estratégias de Precificação</h4>
+                        <p>Aprenda a calcular o preço correto dos seus brigadeiros para garantir lucro em cada venda. Descubra como cobrar o valor justo sem medo e como aumentar o valor percebido dos seus doces. <strong>Valor: R$ 97,00 🚀 GRATUITO!</strong></p>
+                    </div>
+                </div>
+
+                <div class="bonus-item">
+                    <div class="bonus-check">✅</div>
+                    <div class="bonus-text">
+                        <h4>BÔNUS 02 - Como Conquistar Seus Primeiros Clientes</h4>
+                        <p>Estratégias comprovadas para encontrar e fidelizar clientes através do WhatsApp, Instagram, vizinhança e eventos. Técnica "Degustação Inteligente" para transformar curiosos em compradores fiéis. <strong>Valor: R$ 97,00 🚀 GRATUITO!</strong></p>
+                    </div>
+                </div>
+
+                <div class="bonus-item">
+                    <div class="bonus-check">✅</div>
+                    <div class="bonus-text">
+                        <h4>BÔNUS 03 - Plano de Ação: Do Zero ao Primeiro Lucro em 7 Dias</h4>
+                        <p>Plano passo a passo para você sair do zero e conquistar suas primeiras vendas em apenas uma semana. Checklist completo, estratégias de divulgação e técnicas de vendas testadas e aprovadas. <strong>Valor: R$ 97,00 🚀 GRATUITO!</strong></p>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 25px; border-radius: 12px; text-align: center; margin-top: 25px; border: 3px solid #4CAF50;">
+                    <div style="font-size: 18px; color: #666; margin-bottom: 10px;">VALOR TOTAL DOS BÔNUS:</div>
+                    <div style="font-size: 48px; font-weight: bold; color: #4CAF50; margin: 10px 0;">R$ 291,00</div>
+                    <div style="font-size: 20px; color: #FF6B35; font-weight: bold;">HOJE: 100% GRATUITO!</div>
+                </div>
+            </div>
+
+            <button class="btn-continue" onclick="showPrice()">CONTINUAR PARA VER O INVESTIMENTO →</button>
+        </div>
+
+        <!-- Price Section -->
+        <div class="section" id="price">
+            <h2 style="text-align: center; color: #764ba2; margin-bottom: 30px;">💎 INVESTIMENTO HOJE:</h2>
+            
+            <div class="price-box">
+                <div class="old-price">De R$ 197,00</div>
+                <div class="new-price">R$ 67,00</div>
+                <div class="price-label">ou 12x de R$ 6,54 sem juros</div>
+                <p style="color: #4CAF50; font-weight: bold; font-size: 18px; margin-top: 15px;">+ R$ 291,00 em Bônus GRÁTIS!</p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); padding: 25px; border-radius: 15px; margin: 25px 0; border: 2px solid #2196F3;">
+                <h4 style="color: #1565C0; text-align: center; margin-bottom: 15px; font-size: 20px;">📚 O QUE VOCÊ VAI RECEBER:</h4>
+                <div style="color: #333; font-size: 15px; line-height: 2;">
+                    <p>✓ E-book completo "Como Viver de Doces Sem Fogão"</p>
+                    <p>✓ Receitas passo a passo de brigadeiros sem fogão</p>
+                    <p>✓ Guia de ingredientes e utensílios simples</p>
+                    <p>✓ Técnicas de embalagem e apresentação</p>
+                    <p>✓ Estratégias de precificação lucrativa</p>
+                    <p>✓ Plano completo para conquistar clientes</p>
+                    <p>✓ Plano de ação de 7 dias do zero ao lucro</p>
+                    <p>✓ Acesso vitalício ao material</p>
+                    <p>✓ Suporte via WhatsApp</p>
+                </div>
+            </div>
+
+            <button class="btn-continue" onclick="showGuarantee()" style="background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%); font-size: 22px;">
+                🚀 SIM! QUERO COMEÇAR AGORA!
+            </button>
+
+            <p style="text-align: center; margin-top: 20px; color: #666; font-size: 14px;">🔒 Pagamento 100% Seguro | Garantia de 7 Dias</p>
+        </div>
+
+        <!-- Guarantee Section -->
+        <div class="section" id="guaranteeSection">
+            <div class="guarantee">
+                <h3>✅ GARANTIA BLINDADA DE 7 DIAS</h3>
+                <p style="font-size: 18px; margin-top: 20px; line-height: 1.8;">Se você não conseguir fazer seus primeiros brigadeiros ou não ficar satisfeito(a) por QUALQUER motivo, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia!</p>
+                <div style="margin-top: 25px; font-size: 20px; font-weight: bold;">🛡️ SEU RISCO É ZERO!</div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%); padding: 30px; border-radius: 15px; margin: 30px 0; border-left: 5px solid #ffc107;">
+                <h3 style="color: #856404; margin-bottom: 15px; font-size: 22px;">⚠️ ATENÇÃO: Última Chance!</h3>
+                <p style="color: #856404; font-size: 16px; line-height: 1.8;">Essa oferta especial está disponível apenas para as próximas pessoas que clicarem no botão abaixo. Depois disso, o preço volta para R$ 197 e os bônus são removidos. Não perca essa oportunidade de transformar sua vida!</p>
+            </div>
+
+            <button class="btn-continue" onclick="showFAQ()" style="background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%); font-size: 22px; animation: pulse 2s infinite;">
+                💰 GARANTIR MINHA VAGA COM 67% DE DESCONTO!
+            </button>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="section" id="faq">
+            <h2 style="text-align: center; color: #764ba2; margin-bottom: 30px;">❓ Perguntas Frequentes</h2>
+            
+            <div class="faq-item">
+                <h4>Funciona mesmo sem fogão?</h4>
+                <p>Sim! O método é 100% sem fogão. Você usa apenas uma tigela e a geladeira. É rápido, seguro e qualquer pessoa consegue fazer.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Quanto preciso investir para começar?</h4>
+                <p>Menos de R$ 30 em ingredientes para sua primeira fornada. Você não precisa de equipamentos caros! Os ingredientes básicos são leite condensado, leite em pó, chocolate em pó e granulado.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Em quanto tempo vejo resultados?</h4>
+                <p>O plano de 7 dias foi feito exatamente para você ter seu primeiro lucro em uma semana. Muitas alunas vendem tudo no primeiro dia!</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>E se eu não souber fazer doces?</h4>
+                <p>Perfeito! O método foi criado justamente para iniciantes. Tudo é explicado passo a passo, do zero absoluto até as primeiras vendas.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Como vou receber o material?</h4>
+                <p>Assim que o pagamento for confirmado, você receberá o acesso imediato por e-mail em até 3 minutos. O material fica disponível para sempre!</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Como funciona a garantia?</h4>
+                <p>Você tem 7 dias para testar tudo. Se não gostar ou não conseguir resultados, devolvemos 100% do seu investimento. Simples assim!</p>
+            </div>
+
+            <button class="btn-continue" onclick="finalCTA()" style="background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%); font-size: 22px;">
+                🎉 QUERO COMEÇAR MINHA JORNADA AGORA!
+            </button>
+        </div>
+
+        <!-- Final CTA Section -->
+        <div class="section" id="finalCTA">
+            <div style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #FFE66D 0%, #FFC107 100%); border-radius: 20px; border: 5px solid #FF6B35;">
+                <h2 style="color: #764ba2; font-size: 32px; margin-bottom: 20px;">🍫 Sua Nova Vida Começa AGORA!</h2>
+                <p style="color: #333; font-size: 18px; line-height: 1.8; margin-bottom: 25px;">
+                    Milhares de mulheres já transformaram suas vidas com o Brigadeiro Sem Fogo.<br>
+                    <strong style="color: #FF6B35;">Você será a próxima história de sucesso?</strong>
+                </p>
+                
+                <div style="background: white; padding: 25px; border-radius: 15px; margin: 25px 0;">
+                    <div style="font-size: 18px; color: #666; margin-bottom: 10px;">INVESTIMENTO HOJE:</div>
+                    <div style="text-decoration: line-through; color: #999; font-size: 24px;">R$ 197,00</div>
+                    <div style="font-size: 56px; font-weight: bold; color: #4CAF50; margin: 15px 0;">R$ 67,00</div>
+                    <div style="color: #666; font-size: 16px;">ou 12x de R$ 6,54 sem juros</div>
+                    <div style="color: #FF6B35; font-weight: bold; font-size: 20px; margin-top: 15px;">+ R$ 291 em BÔNUS GRÁTIS!</div>
+                </div>
+
+                <button class="btn-continue" onclick="window.open('https://pay.kiwify.com.br/seu-link-aqui', '_blank')" style="background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%); font-size: 24px; padding: 25px 60px;">
+                    💎 GARANTIR MINHA VAGA AGORA!
+                </button>
+
+                <div style="margin-top: 25px;">
+                    <p style="color: #666; font-size: 14px; margin: 5px 0;">✓ Acesso Imediato após a compra</p>
+                    <p style="color: #666; font-size: 14px; margin: 5px 0;">✓ Garantia de 7 dias ou seu dinheiro de volta</p>
+                    <p style="color: #666; font-size: 14px; margin: 5px 0;">✓ Pagamento 100% seguro</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+                <p style="color: white; font-size: 16px; line-height: 1.8;">
+                    <strong style="color: #FFE66D;">⏰ NÃO DEIXE PARA DEPOIS!</strong><br>
+                    O desconto de 67% e os bônus de R$ 291 são válidos apenas hoje.<br>
+                    Amanhã o preço volta ao normal e você perderá essa oportunidade.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background: #2c3e50; color: white; padding: 40px 20px; text-align: center; margin-top: 60px;">
+        <div class="container">
+            <p style="font-size: 18px; margin-bottom: 20px;">🍫 Brigadeiro Sem Fogo - Do Zero ao Primeiro Lucro</p>
+            <p style="color: #95a5a6; font-size: 14px;">© 2025 - Todos os direitos reservados</p>
+            <p style="color: #95a5a6; font-size: 14px; margin-top: 10px;">
+                <a href="#" style="color: #95a5a6; text-decoration: none; margin: 0 10px;">Política de Privacidade</a> | 
+                <a href="#" style="color: #95a5a6; text-decoration: none; margin: 0 10px;">Termos de Uso</a>
+            </p>
+            <p style="color: #95a5a6; font-size: 12px; margin-top: 15px;">🔒 Ambiente 100% seguro - Seus dados estão protegidos</p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>   
+
+</body>
+</html>
